@@ -7,8 +7,6 @@ export function appNIF () {
   const button = new Button('NIF')
   const dialog = new Dialog()
 
-  document.querySelector('.container').append(dialog.diaglog)
-
   button.handleClick(() => {
     try {
       if (isValidatedNIF(document.querySelector('#nif').value)) {
@@ -21,6 +19,7 @@ export function appNIF () {
     }
   })
 
+  document.querySelector('.container').append(dialog.diaglog)
   document.querySelector('.grid')
     .append(button.button)
 }

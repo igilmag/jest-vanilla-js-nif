@@ -30,10 +30,10 @@ export class Dialog {
   }
 
   open () {
-    this.#_dialog.setAttribute('open', true)
+    this.#_dialog.showModal()
   }
 
   close () {
-    this.#_dialog.removeAttribute('open')
+    this.#_dialog.close()
   }
 }

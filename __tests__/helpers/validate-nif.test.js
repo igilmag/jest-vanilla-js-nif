@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { isValidatedNIF } from '../../helpers/validate-nif'
 
 describe('isValidatedNIF tests', () => {
